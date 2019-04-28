@@ -31,7 +31,7 @@ namespace WebApplication12.Controllers
                               join user in _context.User on privelege.UserId equals user.UserId
                               where user == cur_user
                               select itempattern;
-                var list1 = query_1.ToList();
+                var list1 = query_1.Distinct().ToList();
                 return View(list1);
             }
             catch(Exception e)

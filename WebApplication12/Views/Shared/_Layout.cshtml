@@ -31,7 +31,6 @@
                     <div class="navbar-nav">
                         @if (User.Identity.IsAuthenticated)
                         {
-
                             String email = User.Identity.Name;
                             fridgeContext db = new fridgeContext();
                             var query = from p in db.User where p.Email.Equals(email) select p;
@@ -66,7 +65,7 @@
                         @if (User.Identity.IsAuthenticated)
                         {
                             <a class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Itempatterns" asp-action="Index">My Fridge</a>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Storage" asp-action="Index">My Fridge</a>
                             </a>
                         }
                     </div>

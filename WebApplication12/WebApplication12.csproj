@@ -20,9 +20,4 @@
     <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.15" />
   </ItemGroup>
 
-
-  <ItemGroup>
-    <Folder Include="Views\Shelf\" />
-  </ItemGroup>
-
 </Project>
